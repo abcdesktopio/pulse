@@ -1,0 +1,23 @@
+name: Trigger update to oc.pulse.18.04 and oc.user.18.04
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  trigger:
+    runs-on: self-hosted
+    steps:
+      - name: Dispatch repository oc.pulse.18.04
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.TOKEN_DISPATCH }}
+          repository: abcdesktopio/oc.pulse.18.04
+          event-type: dispatch-from-pulse
+
+      - name: Dispatch repository oc.user.18.04
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.TOKEN_DISPATCH }}
+          repository: abcdesktopio/oc.user.18.04
+          event-type: dispatch-from-pulse
