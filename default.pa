@@ -104,7 +104,7 @@ load-module module-native-protocol-unix auth-group=balloon socket=/tmp/.pulse.so
 ### Network access (may be configured with paprefs, so leave this commented
 ### here if you plan to use paprefs)
 #load-module module-esound-protocol-tcp
-#load-module module-native-protocol-tcp
+load-module module-native-protocol-tcp 
 #load-module module-zeroconf-publish
 
 # load-module module-remap-source master=auto_null source_name=desktop sink_properties="device.description='AbcDesktop'" channels=2 channel_map=mono,mono   
