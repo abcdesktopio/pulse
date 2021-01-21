@@ -67,10 +67,10 @@ load-module module-null-sink sink_name=ulaw8_1_8000 format=ulaw channels=1 rate=
 
 
 # abcdesktop for RTP stream
-load-module module-null-sink sink_name=rtp format=s16be channels=2 rate=44100 description="RTP Multicast Sink"
+load-module module-null-sink sink_name=rtp  format=alaw channels=1 rate=8000 sink_properties="device.description='RTP Multicast Sink'"
 
 # when add dynamic
-# load-module module-rtp-send source=rtp.monitor destination=TURNSERVER port=XXXX loop=1
+# load-module module-rtp-send source=rtp.monitor destination=TURNSERVER port=XXXX channels=1 format=alaw loop=1
 
 # load-module module-pipe-sink
 # load-module module-null-sink sink_name=auto_null format=s16le channels=1 rate=22050 sink_properties="device.description='default auto_null'"
