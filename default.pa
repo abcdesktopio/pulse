@@ -194,7 +194,8 @@ load-module module-always-sink
 #.endif
 
 ### Make some devices default
-set-default-sink ulaw8_1_8000
+# set-default-sink ulaw8_1_8000
+set-default-sink rtp
 # set-default-source u8_1_11025
 
 # pactl set-default-sink u8_1_22050
