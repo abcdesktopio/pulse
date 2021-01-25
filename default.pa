@@ -31,8 +31,6 @@
 #load-sample-lazy pulse-coldplug /usr/share/sounds/startup3.wav
 #load-sample-lazy pulse-access /usr/share/sounds/generic.wav
 
-load-sample-lazy  desktopsample /composer/sounds/desktop.wav
-
 
 .fail
 
