@@ -6,7 +6,8 @@ on:
 
 jobs:
   trigger:
-    runs-on: self-hosted
+    # runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: Dispatch repository oc.pulse.18.04
         uses: peter-evans/repository-dispatch@v1
