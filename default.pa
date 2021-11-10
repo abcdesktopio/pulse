@@ -106,6 +106,7 @@ load-module module-null-sink sink_name=rtp  format=alaw channels=1 rate=8000 sin
 #load-module module-esound-protocol-unix
 #.endif
 load-module module-native-protocol-unix auth-group=balloon socket=/tmp/.pulse.sock
+load-module module-native-protocol-tcp  auth-anonymous=true
 
 ### Network access (may be configured with paprefs, so leave this commented
 ### here if you plan to use paprefs)
